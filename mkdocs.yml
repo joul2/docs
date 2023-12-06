@@ -1,0 +1,21 @@
+# site_name: My Docs
+# site_url: https://joul2.github.io/mymkdocs/
+# site_author: joul2
+# theme:
+#   name: material
+
+site_name: 我的第一个站点
+theme:
+  name: material
+# nav:
+#   - 首页: index.md  
+#   - 测试页: test.md
+
+nav:
+- 首页: index.md
+- 测试页1:
+    - Writing your docs: user-guide/writing-your-docs.md
+    - Styling your docs: user-guide/styling-your-docs.md
+- 测试页2:
+    - License: about/license.md
+    - Release Notes: about/release-notes.md
