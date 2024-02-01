@@ -1,22 +1,92 @@
 # site_name: My Docs
-# site_url: https://joul2.github.io/mymkdocs/
+# site_url: https://joul2.github.io/docs/
 # site_author: joul2
 # theme:
 #   name: material
 
+# 注意修改成自己的IP和端口号
+# git config --global http.proxy http://127.0.0.1:7890 
+# git config --global https.proxy http://127.0.0.1:7890
+
+# mkdocs gh-deploy
+
+
 site_name: 我的第一个站点
 theme:
+  language: zh
+
+
   name: material
-# nav:
-#   - 首页: index.md  
-#   - 测试页: test.md
+
+  features: 
+    - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
+    # - navigation.instant 
+    #- header.autohide  #自动隐藏
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    # - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
+    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share #搜索分享按钮
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - content.tabs.link
+    - content.tooltips
+    - content.code.copy
+    # - content.action.edit
+    # - content.action.view
+    - content.code.annotate 
+
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+  icon: 
+    repo: fontawesome/brands/github #右上角图标
+  
+# edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://github.com/joul2/docs # 右上角点击跳转的链接
+repo_name: joul2.github.io # 右上角的名字
 
 nav:
 - 首页: index.md
-- 测试页: test.md
-- 测试页1:
-    - Writing your docs: user-guide/writing-your-docs.md
-    - Styling your docs: user-guide/styling-your-docs.md
-- 测试页2:
-    - License: about/license.md
-    - Release Notes: about/release-notes.md
+- 集成电路基础: 
+    - 研究生入学推荐书目: 集成电路基础/books.md
+    - 电类基础:
+        - 电路基础: 集成电路基础/电类基础/电路基础.md
+        - 模拟CMOS集成电路设计: 集成电路基础/电类基础/信号与系统.md
+        - 半导体物理与器件原理: 集成电路基础/电类基础/半导体物理与器件原理.md
+        - 数字电子技术: 集成电路基础/电类基础/数字电子技术.md
+        - 模拟电子技术: 集成电路基础/电类基础/模拟电子技术.md
+        - 模拟电路基础: 集成电路基础/电类基础/模拟电路基础.md
+    - 数字集成电路设计基础:
+        - Verilog HDL 数字设计与综合: 集成电路基础/数字集成电路设计基础/Verilog HDL 数字设计与综合.md
+        - 数字逻辑与verilog设计: 集成电路基础/数字集成电路设计基础/数字逻辑与verilog设计.md
+        - 数字集成电路设计透视: 集成电路基础/数字集成电路设计基础/数字集成电路设计透视.md
+    - 模拟集成电路设计基础:
+        - 模拟CMOS集成电路设计: 集成电路基础/模拟集成电路设计基础/模拟CMOS集成电路设计.md
+- 三维视觉:
+  - 三维视觉: 三维视觉/3Dvision.md
+
+# extra:
+#   social: 
+#   - icon: fontawesome/brands/github
+#     link: https://joul2.github.io/
+#     name: Github
+#   - icon: fontawesome/brands/bilibili
+#     link: https://joul2.github.io/
+#     name: Bilibili
+#   - icon: material/email
+#     link: joul:<2019285695@qq.com>
+#     name: E-mail
