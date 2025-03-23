@@ -14,7 +14,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.8">
     
     
       
@@ -22,7 +22,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.8608ea7d.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
@@ -442,6 +442,21 @@
       网站搭建
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="网站搭建">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      多设备内容同步
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2471,6 +2486,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="网站搭建">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      多设备内容同步
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2518,6 +2548,20 @@ docs/
 <li>发布站点</li>
 </ol>
 <p><a href="https://mkdocs-like-code.readthedocs.io/zh-cn/latest/get-started/create-program/">参考文档</a></p>
+<h3 id="_2">多设备内容同步</h3>
+<p>两台电脑分别更新这个网站：huawei lenovo</p>
+<p>一台设备更新内容后，会通过 mkdocs build 和 mkdocs gh-deploy，把内容更新到网站。
+这个时候，主要更新的是 joul2.github.io/docs 这个网站中的内容。更新的是 github 中 docs 仓库的 gh-pages 分支。</p>
+<p>为了便于另一台设备无缝衔接，还需要把本地的 docs 中所有修改的内容 push 到 github 中 docs 仓库的 main 分支。</p>
+<p>我是怎么做的：</p>
+<ol>
+<li>在两台电脑都装好了 git</li>
+<li>用的是 git-gui。</li>
+<li>参考菜鸟教程先配置一些东西：https://www.runoob.com/w3cnote/git-gui-window.html</li>
+<li>之后 stage changed，commit，push，一般就能把本地的改动，同步push到main分支里。</li>
+<li>之后另一个电脑设置好remote</li>
+<li>最后pull一下就行。</li>
+</ol>
 
 
 
