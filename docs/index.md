@@ -47,7 +47,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 1. 在两台电脑都装好了 git
 2. 用的是 git-gui。
-2. 参考菜鸟教程先配置一些东西：https://www.runoob.com/w3cnote/git-gui-window.html
-2. 之后 stage changed，commit，push，一般就能把本地的改动，同步push到main分支里。
-2. 之后另一个电脑设置好remote
-2. 最后pull一下就行。
+3. 参考菜鸟教程先配置一些东西：https://www.runoob.com/w3cnote/git-gui-window.html
+4. 之后 stage changed，commit，push，一般就能把本地的改动，同步push到main分支里。
+5. 之后另一个电脑设置好 remote
+6. 最后pull一下就行。这里我设置的有点问题，git gui 没有配置好。所以 pull 不成功的话，就打开 git bash，然后输入git pull \<remote name\>  \<branch name\> --allow-unrelated-histories
